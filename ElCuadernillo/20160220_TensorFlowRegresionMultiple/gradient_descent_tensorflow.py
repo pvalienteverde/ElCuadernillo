@@ -80,8 +80,9 @@ def regression_gradient_descent(train_x,train_y,iteraciones_maximas=10000,diff_e
                 break
             
     tf_gd = time.time()
-    print ("Tiempo de calculo: {}".format(tf_gd-ti_gd))
-    return p,e_ite,error_por_iteracion_gd
+    tiempo_calculo=tf_gd-ti_gd
+    print ("Tiempo de calculo: {}".format(tiempo_calculo))
+    return p,e_ite,tiempo_calculo
 
 def get_minibatches(x_train,y_train,indices):
     '''
@@ -157,6 +158,7 @@ def regression_stochastic_gradient_descent (train_x,train_y,num_mini_batch,itera
                 break        
 
     tf_gd = time.time()
-    print ("Tiempo de calculo: {}".format(tf_gd-ti_gd))        
-    return p,e_ite,error_por_iteracion_sgd
+    tiempo_calculo=tf_gd-ti_gd
+    print ("Tiempo de calculo: {}".format(tiempo_calculo))
+    return p,e_ite,tiempo_calculo
 
