@@ -1,6 +1,9 @@
 import numpy as np
 import tensorflow as tf
 import time
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set(color_codes=True)
 
 def generar_muestra(grado:int, tamano:int=100000, intervalo_x:list=[-2, 2]):
     '''
@@ -162,3 +165,17 @@ def regression_stochastic_gradient_descent (train_x,train_y,num_mini_batch,itera
     print ("Tiempo de calculo: {}".format(tiempo_calculo))
     return p,e_ite,tiempo_calculo
 
+def grafica_resultados(coeficentes_target,coeficientes_gd,coeficientes_sgd,tiempo_sg,tiempo_sgd):
+    #http://www.scipy-lectures.org/intro/matplotlib/matplotlib.html
+    x_minimo = np.linspace(-2,2,50)
+    y_target=np.polynomial.polynomial.polyval(x_minimo, coeficentes_target).ravel()
+    y_gradiente_descendente=np.polynomial.polynomial.polyval(x_minimo, coeficientes_gd).ravel()
+    y_gradiente_descendente_estocastico=np.polynomial.polynomial.polyval(x_minimo, coeficientes_sgd).ravel()
+    
+    plt.plot(x_minimo, y_target, color="blue", linewidth=2.5, linestyle="-", label="Muestra")
+    plt.plot(x_minimo, y_gradiente_descendente, color="red",  linewidth=2.5, linestyle="-", label="Gradiente Descendente, tiempo: {} segundos".format(tiempo_sg))
+    plt.plot(x_minimo, y_gradiente_descendente_estocastico, color="green",  linewidth=2.5, linestyle="-", label="Gradiente Descendente Estocastico, tiempo: {} segundos".format(tiempo_sgd))
+    
+    plt.legend(loc='upper left')
+    
+    return plt
