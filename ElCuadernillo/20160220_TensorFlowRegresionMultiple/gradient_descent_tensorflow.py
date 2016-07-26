@@ -115,7 +115,8 @@ def regression_stochastic_gradient_descent (train_x,train_y,num_mini_batch,itera
     iteraciones_maximas_mini=int(iteraciones_maximas/num_mini_batch)
     error_por_iteracion_sgd=[np.nan]
     ite_reales=0
-    
+    print ("En cada iteracion se usará: ",elementos_por_grupo," entradas")
+    numero_elementos=0
     grafo_regresion_multiple_mini = tf.Graph()
     with grafo_regresion_multiple_mini.as_default():
         
@@ -144,25 +145,26 @@ def regression_stochastic_gradient_descent (train_x,train_y,num_mini_batch,itera
             generados_minibatches=get_minibatches(train_x,train_y,indices.reshape((num_mini_batch,-1)))
             
             for x_mini,y_mini  in generados_minibatches:
+                numero_elementos+=x_mini.shape[0]
                 _,p,e_ite= sesion_SGD.run([optimizador,pesos,ecm],feed_dict={datos_entrada:x_mini,datos_salida:y_mini})        
                 condicion_parada=np.abs(error_por_iteracion_sgd[-1]-e_ite)<diff_error_parada
                 error_por_iteracion_sgd.append(e_ite)
                 ite_reales+=1
                 
-                if ite_reales % 200 == 0:
+                if ite_reales % 200 == 0 or condicion_parada:
                     print("Iteracion {}:\n\tPesos: {}\n\tecm: {}".format(ite_reales,p.ravel(),e_ite))
     
-                if condicion_parada:
-                    print("-------------------------------------------------------------------------")
-                    print("Iteracion {}:\n\tPesos: {}\n\tecm: {}".format(ite_reales,p.ravel(),e_ite))
-                    print("-------------------------------------------------------------------------")
-                    break
+                    if condicion_parada:
+                        break
+                
             if condicion_parada:
                 break        
 
     tf_gd = time.time()
     tiempo_calculo=tf_gd-ti_gd
     print ("Tiempo de calculo: {}".format(tiempo_calculo))
+    print ("Numero de muestras utilizadas: {}".format(numero_elementos))
+    
     return p,e_ite,tiempo_calculo
 
 def grafica_resultados(coeficentes_target,coeficientes_gd,coeficientes_sgd,tiempo_sg,tiempo_sgd):
