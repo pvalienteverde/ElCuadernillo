@@ -6,8 +6,11 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/IteradoresBoost"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/IteradoresPersonalizados"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/IteradoresBoost/Debug"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/IteradoresPersonalizados/Debug"/>
 						<entry flags="RESOLVED" kind="libraryFile" name="IteradoresBoost" srcPrefixMapping="" srcRootPath=""/>
+						<entry flags="RESOLVED" kind="libraryFile" name="IteradoresPersonalizados" srcPrefixMapping="" srcRootPath=""/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -85,6 +88,7 @@
 								<option id="gnu.cpp.compiler.exe.debug.option.optimization.level.1303923690" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.1961947575" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.86856155" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/IteradoresBoost}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/IteradoresPersonalizados}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.dialect.std.356938387" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
@@ -96,6 +100,7 @@
 								<option id="gnu.c.compiler.exe.debug.option.debugging.level.1404615179" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1959846195" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/IteradoresBoost}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/IteradoresPersonalizados}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1856438994" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
@@ -105,8 +110,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/IteradoresPersonalizados/Debug}&quot;"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.651175817" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="IteradoresPersonalizados"/>
 									<listOptionValue builtIn="false" value="boost_unit_test_framework"/>
-									<listOptionValue builtIn="false" value="IteradoresPersonalizados"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1941710943" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -115,6 +120,7 @@
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.assembler.exe.debug.1084907444" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug">
 								<option id="gnu.both.asm.option.include.paths.1806941977" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/IteradoresBoost}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/IteradoresPersonalizados}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1852151096" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
@@ -130,8 +136,90 @@
 				<externalSettings containerId="IteradoresPersonalizados;cdt.managedbuild.config.gnu.exe.debug.518920450" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/IteradoresBoost"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/IteradoresPersonalizados"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/IteradoresBoost/Debug"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/IteradoresPersonalizados/Debug"/>
 						<entry flags="RESOLVED" kind="libraryFile" name="IteradoresBoost" srcPrefixMapping="" srcRootPath=""/>
+						<entry flags="RESOLVED" kind="libraryFile" name="IteradoresPersonalizados" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.gnu.exe.debug.539848910.1620674833">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.debug.539848910.1620674833" moduleId="org.eclipse.cdt.core.settings" name="DebugEjemploFilterIterator">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.exe.debug.539848910.1620674833" name="DebugEjemploFilterIterator" parent="cdt.managedbuild.config.gnu.exe.debug">
+					<folderInfo id="cdt.managedbuild.config.gnu.exe.debug.539848910.1620674833." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.exe.debug.1123486400" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.exe.debug">
+							<targetPlatform id="cdt.managedbuild.target.gnu.platform.exe.debug.1258828412" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.debug"/>
+							<builder buildPath="${workspace_loc:/IteradoresBoost}/DebugTest" id="cdt.managedbuild.target.gnu.builder.exe.debug.43822685" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.exe.debug"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.708429800" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.765000172" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug">
+								<option id="gnu.cpp.compiler.exe.debug.option.optimization.level.939710223" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.989264360" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1215334724" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/IteradoresBoost}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/IteradoresPersonalizados}&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.dialect.std.2127399444" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.other.other.1203123777" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -std=c++14" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1591687337" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.314116772" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.exe.debug.option.optimization.level.977488530" name="Optimization Level" superClass="gnu.c.compiler.exe.debug.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.c.compiler.exe.debug.option.debugging.level.1260315877" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.986586187" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/IteradoresBoost}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/IteradoresPersonalizados}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.404342846" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.2045291904" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.187411841" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
+								<option id="gnu.cpp.link.option.paths.290714406" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/IteradoresPersonalizados/Debug}&quot;"/>
+								</option>
+								<option id="gnu.cpp.link.option.libs.1075180087" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+									<listOptionValue builtIn="false" value="IteradoresPersonalizados"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.734030914" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.exe.debug.584148262" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug">
+								<option id="gnu.both.asm.option.include.paths.893163759" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/IteradoresBoost}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/IteradoresPersonalizados}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.229604444" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="ejemplo_filter_iterator"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="IteradoresPersonalizados;cdt.managedbuild.config.gnu.exe.debug.518920450" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/IteradoresBoost"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/IteradoresPersonalizados"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/IteradoresBoost/Debug"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/IteradoresPersonalizados/Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="IteradoresBoost" srcPrefixMapping="" srcRootPath=""/>
+						<entry flags="RESOLVED" kind="libraryFile" name="IteradoresPersonalizados" srcPrefixMapping="" srcRootPath=""/>
 					</externalSetting>
 				</externalSettings>
 			</storageModule>
@@ -156,19 +244,7 @@
 	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.2032634747;cdt.managedbuild.config.gnu.exe.release.2032634747.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1936912480;cdt.managedbuild.tool.gnu.cpp.compiler.input.1988193759">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.518920450;cdt.managedbuild.config.gnu.exe.debug.518920450.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.244784072;cdt.managedbuild.tool.gnu.c.compiler.input.1827691943">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.518920450.309246735;cdt.managedbuild.config.gnu.exe.debug.518920450.309246735.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1637660843;cdt.managedbuild.tool.gnu.c.compiler.input.5013981">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.539848910.118009197;cdt.managedbuild.config.gnu.exe.debug.539848910.118009197.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.590252977;cdt.managedbuild.tool.gnu.cpp.compiler.input.1491004295">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.539848910.118009197;cdt.managedbuild.config.gnu.exe.debug.539848910.118009197.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1520973900;cdt.managedbuild.tool.gnu.c.compiler.input.1994995625">
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.539848910;cdt.managedbuild.config.gnu.exe.debug.539848910.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.470980768;cdt.managedbuild.tool.gnu.cpp.compiler.input.928000635">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.539848910;cdt.managedbuild.config.gnu.exe.debug.539848910.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.234584597;cdt.managedbuild.tool.gnu.c.compiler.input.1856438994">
@@ -177,13 +253,31 @@
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.518920450;cdt.managedbuild.config.gnu.exe.debug.518920450.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1237920222;cdt.managedbuild.tool.gnu.cpp.compiler.input.2077010882">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.518920450;cdt.managedbuild.config.gnu.exe.debug.518920450.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.244784072;cdt.managedbuild.tool.gnu.c.compiler.input.1827691943">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.539848910.1620674833;cdt.managedbuild.config.gnu.exe.debug.539848910.1620674833.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.765000172;cdt.managedbuild.tool.gnu.cpp.compiler.input.1591687337">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.518920450.309246735;cdt.managedbuild.config.gnu.exe.debug.518920450.309246735.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1637660843;cdt.managedbuild.tool.gnu.c.compiler.input.5013981">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.518920450.309246735;cdt.managedbuild.config.gnu.exe.debug.518920450.309246735.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.909789833;cdt.managedbuild.tool.gnu.cpp.compiler.input.718610037">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.2032634747;cdt.managedbuild.config.gnu.exe.release.2032634747.;cdt.managedbuild.tool.gnu.c.compiler.exe.release.1052819788;cdt.managedbuild.tool.gnu.c.compiler.input.1007631622">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.539848910;cdt.managedbuild.config.gnu.exe.debug.539848910.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.470980768;cdt.managedbuild.tool.gnu.cpp.compiler.input.928000635">
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.539848910.118009197;cdt.managedbuild.config.gnu.exe.debug.539848910.118009197.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.590252977;cdt.managedbuild.tool.gnu.cpp.compiler.input.1491004295">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.539848910.118009197;cdt.managedbuild.config.gnu.exe.debug.539848910.118009197.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1520973900;cdt.managedbuild.tool.gnu.c.compiler.input.1994995625">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.2032634747;cdt.managedbuild.config.gnu.exe.release.2032634747.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1936912480;cdt.managedbuild.tool.gnu.cpp.compiler.input.1988193759">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.539848910.1620674833;cdt.managedbuild.config.gnu.exe.debug.539848910.1620674833.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.314116772;cdt.managedbuild.tool.gnu.c.compiler.input.404342846">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 	</storageModule>

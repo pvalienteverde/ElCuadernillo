@@ -37,7 +37,7 @@ std::string Domicilio::Informacion() const {
 std::string Domicilio::ToString() const {
 	std::ostringstream buffer;
 	buffer << "CodigoPostal: " << codigo_postal << ", Huespedes: " << huespedes
-			<< ", ID: " << id<<", Informacion: "<<informacion;
+			<< ", Informacion: " << informacion;
 	return buffer.str();
 }
 

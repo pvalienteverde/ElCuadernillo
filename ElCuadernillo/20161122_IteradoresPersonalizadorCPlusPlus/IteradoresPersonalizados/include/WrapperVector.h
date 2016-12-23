@@ -16,7 +16,7 @@ namespace IteradoresPersonalizados {
 
 /**
  * Clase que envuelve a std::vector, añadiendo un iterador en base
- * al filtro especifico
+ * al predicado especifico
  */
 template<typename T>
 class WrapperVector: public std::vector<T> {
